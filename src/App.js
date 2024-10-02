@@ -48,12 +48,10 @@ function App() {
       <Navbar mode={mode} toggleMode={toggleMode} aboutText="about"/>
       <Alert alert={alert}/>
       <div className="container my-3" >
-        <h1>Hello</h1>
       <Routes>
         <Route exact path="/about" element={<About />}></Route>
         <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>}></Route>
       </Routes>
-      <h2>Hi</h2>
       </div>
       </BrowserRouter>
        
